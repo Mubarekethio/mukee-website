@@ -84,17 +84,25 @@ body {
 
 /* About section styles */
 .about { 
-	display: flex; 
-	align-items: center; 
-	background-image: linear-gradient(45deg, #363D73, #2794B3); 
-	justify-content: space-between; 
-	width: 100%; 
-} 
+  display: flex;
+	align-items: justify;
+	justify-content: justify;
+	flex-direction: column;
+
+}
+	
+
 
 .about .about-text { 
-	width: 450px; 
-	color: #fff; 
-	padding: 5rem 1rem 5rem 5rem; 
+  text-align: justify;
+	display: flex;
+	flex-direction: column;
+	align-items: justify;
+	justify-content: justify;
+	border-radius: 20px;
+	background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+	padding: 1rem;
+	
 } 
 
 .about .about-image img { 
