@@ -1,0 +1,491 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Mukee web</title> 
+
+
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/responsive.css">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	
+</head> 
+
+<body> 
+	<!-- Navbar header section -->
+	
+
+	<header class="header"> 
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+			<div class="container-fluid">
+				<div class="logo">
+					<h2 class="logo-heading">Mubarek</h2>
+				</div>
+				<div class="hamburger" id="hamburger">
+					<i class="fas fa-bars hamburger-icon"></i> 
+					<i class="fas fa-times cross-icon"></i> 
+				</div> 
+				<div class="menu"> 
+					<ul class="menu-list"> 
+						<li class="menu-list-items"> 
+							<a class="links" href="#home"> 
+								Home
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" href="#project" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Project
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="https://github.com/Mubarekethio/Voice-Recognition-Qafaraf-and-Amharic">Qafaraf Voice Command</a></li>
+								<li><a class="dropdown-item" href="https://github.com/Mubarekethio/satellite-pointing-Angle-Calculator">Sattelite Look Angle Calculator</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Project Demo Youtube</a></li>
+							</ul>
+						</li>
+		
+						<li class="menu-list-items"> 
+							<a class="links" href="#about"> 
+								About 
+							</a> 
+						</li> 
+						<li class="menu-list-items"> 
+							<a class="links" href="#services"> 
+								Services 
+							</a> 
+						</li> 
+						<li class="menu-list-items"> 
+							<a class="links" href="#contact"> 
+								Contact Me 
+							</a> 
+						</li> 
+					</ul> 
+				</div> 
+
+			</div>
+		</nav> 
+	</header> 
+
+
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, I'm</h3> 
+				<h1 class="my-heading">Mubarek Kebede</h1>
+				<h4 class="sub-heading">
+				IP Technician at Ethiotelecom with 8 years of Experience.<br>
+				Software Developer with 4 years of Experience.
+				</h4> 
+			</div> 
+			<div class="intro-buttons"> 
+				<button class="btn common-btn";
+					onclick= "window.location.href='https://mail.google.com/mail/mubare.k1449@gmail.com/0/#compose';">
+					Hire Me
+				</button>
+				<button class="btn common-btn";
+					onclick= "window.location.href='https://drive.google.com/file/d/1hpDSjtPpJXrBt7jnYfk81Uv3ymIL7DEb/view?usp=drive_link';">
+					Get Resume
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Project Section -->
+	<section class="project" id="project">
+		<div class="project-heading">
+			<h1 class="my-heading text-center">Projects</h1>
+		</div>
+		<div class="project-content">
+			<div class="my-row1">
+				<div class="my-col1">
+					<div class="my-card1">
+						<div class="icon">
+							<i class="fa fa-microphone"></i>
+						</div>
+						<h2 class="greet-heading blue-text">Qafaraf and Amharic Voice Speech Command Recognition</h2> 
+						<p class="small-par">
+							This project is build using a machine learning approach
+							to recognize voice command of Qafaraf and Amharic
+							(Ethiopian languages) the voice command is used to control a simple robotic in five direction. 
+							In order to control the the robotic car, the user can choose their 
+							preferred language. The project also has a software and hardware 
+							component, and while the software portion is almost complete 
+							and has successfully been tested using Proteus simulation, 
+							the hardware component is still being developed. 
+							The software part of the project is implemented using python, 
+							Kotlin and C for Arduino programming language 
+							the steps are explained below. <br>
+							In this project I can successfully accomplish the following task:
+						</p>
+						<ul>
+							<li>Collecting voice data and Preprocessing the data for ML model using Audacity</li>
+
+							<li>Extracting Feature from the collected data for feature extraction i have been used 
+								<ul>
+									<li>Mel Frequency Cepstral Coefficient (MFCC)</li>
+									<li>Spectrogram Feature Extraction</li>
+								</ul>
+								This step is conducted using Python and Tensorflow Frame worked
+							</li>
+							<li>Build Deep Learning model and Train the model: like CNN and RNN to train the model on the dataset</li>
+							<li>Test and optimize the model using Deep Learning Model optimization techniques</li>
+							<li>Export the trained model using tflite model to deploy the model into embedded device or to use the trained model for build mobile application</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<div class="my-row1">
+			<div class="my-col1">
+				<div class="my-card1">
+					<div class="icon">
+						<i class="fas fa-satellite-dish"></i>
+					</div>
+					<h2 class="greet-heading blue-text">Satellite Pointing Angle Calculator</h2>
+					<p class="small-par">
+						This project is develope an android App that can 
+						be used to calculate the pointing angle i.e.. Azimuth,
+						normal and inverted Elevation of the remote
+						satellite dish. The App automatically get the current location 
+						(latitude and longtude) and it can calculate the Az, and el.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+
+
+
+	<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About Me</h1> 
+			<p class="lead-para"> 
+				I'm Mubarek Kebede, originally from Ethiopia,
+				and I graduated from Bahirdar University with a 
+				degree in Electrical and Computer Engineering.
+				I've been employed at Ethiopian Telecom for over
+				8 years as an IP and VSAT technician. My job
+				responsibilities include installing, configuring, and 
+				maintaining IP and VSAT networks to keep them 
+				operational and effective.
+			</p>
+			<p class="lead-para"> Moreover, I have a strong interest in programming,
+				thus I have worked on a machine learning project of 
+				my own called "Voice Command Control Wheelchair
+				Using Amharic and Qafaraf" dialect. An Android app 
+				for smartphones is also part of the project, enabling 
+				users to control the system.
+				Therefore, I am able to obtain experience with
+				the programming languages Java, Python,
+				TensorFlow, and Kotlin through my own project.
+			</p>
+		</div>
+		<div class="about-image">
+			<img src="./Image/mupic1.jpg" alt="About Image">
+		</div>
+	</section>
+
+
+
+	<!-- Services Section -->
+	<section class="services" id="services"> 
+		<div class="services-heading"> 
+			<h1 class="my-heading text-center">My Services</h1> 
+		</div> 
+		<div class="services-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-paint-brush"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">Web Design</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fa-solid fa-code"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Web Development 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-chart-line"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text">SEO</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+			</div> 
+			
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-quote-left"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Content Writting 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining of websites. 
+							It includes aspects such as web design, 
+							web publishing, web programming, and 
+							database management. It is the creation 
+							of an application that works over the 
+							internet i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining of websites. 
+							It includes aspects such as web design, 
+							web publishing, web programming, and 
+							database management. It is the creation of an 
+							application that works over the internet i.e. 
+							websites. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fab fa-wordpress-simple"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							WordPress Dev 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining of websites. 
+							It includes aspects such as web design, 
+							web publishing, web programming, and 
+							database management. It is the creation 
+							of an application that works over the 
+							internet i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="my-card"> 
+						<div class="icon"> 
+							<i class="fas fa-video"></i> 
+						</div> 
+						<h3 class="greet-heading blue-text"> 
+							Video Editing 
+						</h3> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+						<p class="small-para"> 
+							Web development refers to the creating, 
+							building, and maintaining 
+							of websites. It includes aspects such as 
+							web design, web publishing, 
+							web programming, and database management. 
+							It is the creation of an 
+							application that works over the internet 
+							i.e. websites. 
+						</p> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<h1 class="my-heading text-center">Contact Me</h1> 
+		</div> 
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Email"> 
+					<input class="form-controls" type="text"
+						placeholder="Your Phone"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="" cols="30"
+							rows="10"> 
+					</textarea> 
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">My Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">EMAIL</h5> 
+					<p class="contact-text">mubare.k1449@gmail.com</p> 
+				</div> 
+				<div class="details"> 
+					<h5 class="contact-heading">PHONE</h5> 
+					<p class="contact-text">+251 914070683</p> 
+				</div> 
+				 
+				<div class="details"> 
+					<h5 class="contact-heading">ADDRESS</h5> 
+					<p class="contact-text">Afar, Ethiopia</p> 
+					
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Footer section -->
+	<footer class="footer"> 
+		<div class="footer-content text-center"> 
+			<h4> 
+				Copyright © 2023 All rights reserved | Mubarek.K. 
+			</h4> 
+			<div class="social-links"> 
+				<div class="footer-menu"> 
+					<ul class="footer-menu-list"> 
+
+				  <li class="footer-list-items"> 
+							<a class="footer-links" href="https://github.com/Mubarekethio">
+								<i class="fab fa-github"></i> 
+							</a>
+						</li> 
+				  <li class="footer-list-items"> 
+							<a class="footer-links" href="https://www.linkedin.com/in/mubarek-kebede-582012148">
+								<i class="fab fa-linkedin-in"></i> 
+							</a> 
+						</li> 
+				  
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="#"> 
+								<i class="fab fa-facebook-f"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://x.com/mubarekethio">
+								<i class="fab fa-twitter"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://t.me/Mukee14">
+								<i class="fab fa-telegram"></i> 
+							</a> 
+						</li> 
+						
+					</ul> 
+				</div> 
+			</div> 
+		</div> 
+	</footer> 
+
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+		integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script>
+	<script src="./scripts/script.js"></script> 
+</body> 
+
+</html>
