@@ -18,7 +18,7 @@ body {
 	width: 100%; 
 	background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C); 
 	background-color: transparent; 
-} 
+}
 
 .logo { 
 	padding: 0 5rem; 
@@ -54,12 +54,13 @@ body {
 @media screen and (min-width: 856px) and (max-width: 1024px) { 
 	.menu-list .menu-list-items { 
 		padding: 0.5rem 0.3rem; 
-	} 
-} 
+	}
+}
 
 /* Main Hero Section Styles */
-.hero { 
-	background-image: url('./Images/heroImg3.avif'); 
+/*<!--background-image: url('/Image/Portfff.avif');--> */
+.hero {
+
 	background-repeat: no-repeat; 
 	background-size: 100% 100%; 
 	width: 100%; 
@@ -79,22 +80,21 @@ body {
 	margin: 2rem 0; 
 	display: flex; 
 	align-items: center; 
-	justify-content: space-evenly; 
-} 
+	justify-content: space-evenly;
+}
 
 /* About section styles */
-.about { 
-  display: flex;
+.about {
+	display: flex;
 	align-items: justify;
 	justify-content: justify;
 	flex-direction: column;
-
+	margin: 4.8rem 0;
+	padding: 0 5rem;
 }
-	
 
-
-.about .about-text { 
-  text-align: justify;
+.about .about-text {
+	text-align: justify;
 	display: flex;
 	flex-direction: column;
 	align-items: justify;
@@ -120,57 +120,57 @@ body {
 	margin: 4.8rem 0;
 	padding: 0 5rem;
 }
-.my-row1 { 
-	display: flex; 
-	align-items: center; 
-	justify-content: space-between; 
-	margin: 2rem 0; 
-} 
+.my-row1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
 .my-row1 .my-col1{
 	text-align: justify;
 }
+
 
 .my-card1 {
 	text-align: justify;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: justify;
 	border-radius: 20px;
-	background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+	background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C);
 	padding: 1rem;
 }
 
 
 
 /* Services section styles */
-.services { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-	flex-direction: column; 
-	margin: 4.8rem 0; 
-	padding: 0 5rem; 
-} 
+.services {
+	display: flex;
+	align-items: justify-align;
+	justify-content: justify;
+	flex-direction: column;
+	margin: 4.8rem 0;
+	padding: 0 5rem;
+}
 
-.my-row { 
-	display: flex; 
-	align-items: center; 
-	justify-content: space-between; 
-	margin: 2rem 0; 
-} 
+.my-row {
+	display: flex;
+	align-items: justify-flex;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
 
-.my-row .my-col { 
-	text-align: center; 
-	width: 30%; 
-} 
+.my-row .my-col {
+	text-align: justify;
+}
 
 .my-card { 
-	text-align: center; 
+	text-align: justify; 
 	display: flex; 
 	flex-direction: column; 
 	align-items: center; 
-	justify-content: center; 
+	justify-content: justify; 
 	border-radius: 20px; 
 	background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
 	padding: 1rem; 
@@ -277,17 +277,17 @@ body {
 	letter-spacing: 1px; 
 } 
 
-.my-heading { 
-	font-size: 2.5rem; 
-	margin: 0; 
-} 
+.my-heading {
+	font-size: 2.5rem;
+	margin: 0;
+}
 
-.sub-heading { 
-	margin: 0; 
-	font-size: 0.8rem; 
-	color: #ccc; 
-	font-weight: lighter; 
-} 
+.sub-heading {
+	margin: 0;
+	font-size: 0.8rem;
+	color: #3006d8;
+	font-weight: lighter;
+}
 
 .links:hover { 
 	border-bottom: 2px solid #fff; 
@@ -342,13 +342,13 @@ body {
 } 
 
 .text-center { 
-	text-align: center; 
-} 
+	text-align: center;
+}
 
-.small-para { 
-	font-size: 14px; 
-	color: #fff; 
-} 
+.small-para {
+	font-size: 14px;
+	color:#101010;
+}
 
 .lead-para{
 	font-size: 14px;
