@@ -96,7 +96,7 @@
 					Hire Me
 				</button>
 				<button class="btn common-btn";
-					onclick= "window.location.href='https://drive.google.com/file/d/1hpDSjtPpJXrBt7jnYfk81Uv3ymIL7DEb/view?usp=drive_link';">
+					onclick= "window.location.href='https://drive.google.com/file/d/1AIEouGhohzU_qDcLGgSZx5AZbnntUybZ/view?usp=drivesdk';">
 					Get Resume
 				</button>
 			</div>
@@ -163,6 +163,35 @@
 						satellite dish. The App automatically get the current location 
 						(latitude and longtude) and it can calculate the Az, and el.
 					</p>
+				  <p class="small-par"> 
+				  <ul>
+			          <li>
+				              <h4>Azimuth Angle</h4>Azimuth angle means the angle between North, measured clockwise around the observers  horizon, and a celestial body (sun, moon). It can measured using a compass <br>
+				        </li>
+				  
+				  			    <li>
+				              <h4>Elevation Angle</h4> Elevation angle is the vertical angle formed between the direction of travel of electromagnetic wave radiated from an earth station antenna pointing directly towards a satellite and horizontal plane.
+				         </li>
+				  
+				          <li>
+				              <h4>Inverted Elevation Angle</h4> Inverted elevation is an elevation angle when the dish is inverted in upward direction.
+             </li>
+				  </ul>
+				  
+				  Finally, if your satellite are in the west direction you can use the minus sign ex. if the satellite is at 18°W you can use '-18°' or you can use 360-18=342.<br>
+
+				  
+				  Tip: Typical satellite antenna offsets are 22.3º and 17.3° for this app 22.3 is used for offset angle of the sat antenna. If your antenna offset angle is not 22.3 you must consider this difference on the elevation the following formula can help you on this:<br>
+				  offset= 22.3-your antenna offset </br>
+				  Actual Elevation= Calculated Elevation – Offset<br>
+				  
+				  
+				  Example: if your antenna offset is 24.4 and the elevation from the app is 44.5 then you can calculate the actual offset angle
+				 <br> offset=22.3-24.4=-2.1
+				  <br> Then the elevation=44.5-(-2.1)= 46.6
+				  </p>
+				  
+				  </p>
 				</div>
 			</div>
 		</div>
@@ -175,9 +204,11 @@
 
 	<!-- About Section -->
 	<section id="about" class="about"> 
-		<div class="about-text"> 
-			<h1 class="my-heading">About Me</h1> 
-			<p class="lead-para"> 
+			<div class="project-heading">
+				 
+			<h1 class="my-heading text-center">About Me</h1>
+		</div>
+				  <div class="about-text"> 
 				I'm Mubarek Kebede, originally from Ethiopia,
 				and I graduated from Bahirdar University with a 
 				degree in Electrical and Computer Engineering.
