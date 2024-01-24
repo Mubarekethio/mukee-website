@@ -1,12 +1,11 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 
-<head> 
-	<meta charset="UTF-8"> 
+<head>
+	<meta charset="UTF-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0">
-	<title>Mukee web</title> 
-
+	<title>Mukee web</title>
 
 	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/responsive.css">
@@ -19,78 +18,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	
-</head> 
 
-<body> 
+</head>
+
+<body>
+
 	<!-- Navbar header section -->
-	
-
-	<header class="header"> 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-			<div class="container-fluid">
-				<div class="logo">
-					<h2 class="logo-heading">Mubarek</h2>
-				</div>
-				<div class="hamburger" id="hamburger">
-					<i class="fas fa-bars hamburger-icon"></i> 
-					<i class="fas fa-times cross-icon"></i> 
-				</div> 
-				<div class="menu"> 
-					<ul class="menu-list"> 
-						<li class="menu-list-items"> 
-							<a class="links" href="#home"> 
-								Home
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle active" href="#project" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Project
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="https://github.com/Mubarekethio/Voice-Recognition-Qafaraf-and-Amharic">Qafaraf Voice Command</a></li>
-								<li><a class="dropdown-item" href="https://github.com/Mubarekethio/satellite-pointing-Angle-Calculator">Sattelite Look Angle Calculator</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="#">Project Demo Youtube</a></li>
-							</ul>
-						</li>
-		
-						<li class="menu-list-items"> 
-							<a class="links" href="#about"> 
-								About 
-							</a> 
-						</li> 
-						<li class="menu-list-items"> 
-							<a class="links" href="#services"> 
-								Services 
-							</a> 
-						</li> 
-						<li class="menu-list-items"> 
-							<a class="links" href="#contact"> 
-								Contact Me 
-							</a> 
-						</li> 
-					</ul> 
-				</div> 
-
+	<header class="header">
+		<nav class="navbar">
+			<div class="logo">
+				<h2 class="logo-heading">Mubarek</h2>
 			</div>
-		</nav> 
-	</header> 
+			<div class="hamburger" id="hamburger">
+				<i class="fas fa-bars hamburger-icon"></i> 
+				<i class="fas fa-times cross-icon"></i>
+			</div>
+			<div class="menu">
+				<ul class="menu-list">
+					<li class="menu-list-items">
+						<a class="links" href="#home">
+							Home
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<li class="menu-list-items">
+                        <a class="links" href="#project">
+                            project
+                        </a>
+                    </li>
+					<li class="menu-list-items">
+						<a class="links" href="#about">
+							About
+						</a>
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="#services">
+							Services
+						</a>
+					</li>
+					<li class="menu-list-items">
+						<a class="links" href="#contact">
+							Contact Me
+						</a>
+					</li>
+				</ul>
+			</div>
 
+		</nav>
+	</header>
 
 
 	<!-- Main hero banner -->
-	<section id="home" class="hero"> 
-		<div class="intro"> 
-			<div class="headings"> 
-				<h3 class="greet-heading">Hello, I'm</h3> 
+	<section id="home" class="hero">
+		<div class="intro">
+			<div class="headings">
+				<h3 class="greet-heading">Hello, I'm</h3>
 				<h1 class="my-heading">Mubarek Kebede</h1>
 				<h4 class="sub-heading">
 				IP Technician at Ethiotelecom with 8 years of Experience.<br>
 				Software Developer with 4 years of Experience.
-				</h4> 
-			</div> 
-			<div class="intro-buttons"> 
+				</h4>
+			</div>
+			<div class="intro-buttons">
 				<button class="btn common-btn";
 					onclick= "window.location.href='https://mail.google.com/mail/mubare.k1449@gmail.com/0/#compose';">
 					Hire Me
@@ -134,7 +123,6 @@
 						</p>
 						<ul>
 							<li>Collecting voice data and Preprocessing the data for ML model using Audacity</li>
-
 							<li>Extracting Feature from the collected data for feature extraction i have been used 
 								<ul>
 									<li>Mel Frequency Cepstral Coefficient (MFCC)</li>
@@ -149,53 +137,49 @@
 					</div>
 				</div>
 			</div>
-		<div class="my-row1">
-			<div class="my-col1">
-				<div class="my-card1">
-					<div class="icon">
-						<i class="fas fa-satellite-dish"></i>
-					</div>
-					<h2 class="greet-heading blue-text">Satellite Pointing Angle Calculator</h2>
-					<p class="small-par">
-						This project is develope an android App that can 
-						be used to calculate the pointing angle i.e.. Azimuth,
-						normal and inverted Elevation of the remote
-						satellite dish. The App automatically get the current location 
-						(latitude and longtude) and it can calculate the Az, and el.
-					</p>
-				  <p class="small-par"> 
-				  <ul>
-			          <li>
-				              <h4>Azimuth Angle</h4>Azimuth angle means the angle between North, measured clockwise around the observers  horizon, and a celestial body (sun, moon). It can measured using a compass <br>
-				        </li>
-				  
-				  			    <li>
-				              <h4>Elevation Angle</h4> Elevation angle is the vertical angle formed between the direction of travel of electromagnetic wave radiated from an earth station antenna pointing directly towards a satellite and horizontal plane.
-				         </li>
-				  
-				          <li>
-				              <h4>Inverted Elevation Angle</h4> Inverted elevation is an elevation angle when the dish is inverted in upward direction.
-             </li>
-				  </ul>
-				  
-				  Finally, if your satellite are in the west direction you can use the minus sign ex. if the satellite is at 18°W you can use '-18°' or you can use 360-18=342.<br>
+			<div class="my-row1">
+				<div class="my-col1">
+					<div class="my-card1">
+						<div class="icon">
+							<i class="fas fa-satellite-dish"></i>
+						</div>
+						<h2 class="greet-heading blue-text">Satellite Pointing Angle Calculator</h2>
+						<p class="small-par">
+							This project is develope an android App that can
+							be used to calculate the pointing angle i.e.. Azimuth,
+							normal and inverted Elevation of the remote
+							satellite dish. The App automatically get the current location
+							(latitude and longitude) and it can calculate the Az, and el.
+						</p>
+						<ul>
+							<li><h4>Azimuth Angle</h4>Azimuth angle means the angle between North, measured clockwise around the observers  horizon, and a celestial body (sun, moon). It can measured using a compass</li>
+							<li><h4>Elevation Angle</h4> Elevation angle is the vertical angle formed between the direction of travel of electromagnetic wave radiated from an earth station antenna pointing directly towards a satellite and horizontal plane.</li>
+							<li><h4>Inverted Elevation Angle</h4> Inverted elevation is an elevation angle when the dish is inverted in upward direction.</li>
+						</ul>
+							Finally, if your satellite are in the west direction you can use the minus sign ex. if the satellite is
+							at 18°W you can use '-18°' or you can use 360-18=342.<br>
+							<br> Tip: Typical satellite antenna offsets are 22.3º and
+							17.3° for this app 22.3 is used for offset angle of the
+							sat antenna. If your antenna offset angle is not 22.3
+							you must consider this difference on the elevation the
+							following formula can help you on this:
+							<ul>
+								<li>Offset= 22.3-your antenna offset</li>
+								<li>Actual Elevation= Calculated Elevation – Offset</li>
+							</ul>
+							Example: if your antenna offset is
+							24.4 and the elevation from the app is 44.5 then you
+							can calculate the actual offset angle.
+							<ul>
+								<li>Offset=22.3-24.4=-2.1</li>
+								<li>Then the elevation=44.5-(-2.1)= 46.6</li>
+							</ul>
+						</ul>
 
-				  
-				  Tip: Typical satellite antenna offsets are 22.3º and 17.3° for this app 22.3 is used for offset angle of the sat antenna. If your antenna offset angle is not 22.3 you must consider this difference on the elevation the following formula can help you on this:<br>
-				  offset= 22.3-your antenna offset </br>
-				  Actual Elevation= Calculated Elevation – Offset<br>
-				  
-				  
-				  Example: if your antenna offset is 24.4 and the elevation from the app is 44.5 then you can calculate the actual offset angle
-				 <br> offset=22.3-24.4=-2.1
-				  <br> Then the elevation=44.5-(-2.1)= 46.6
-				  </p>
-				  
-				  </p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</section>
 
 
@@ -203,41 +187,43 @@
 
 
 	<!-- About Section -->
-	<section id="about" class="about"> 
-			<div class="project-heading">
-				 
-			<h1 class="my-heading text-center">About Me</h1>
+	<section id="about" class="about">
+		<div class=about-heading">
+			<h1 class="my-heading text-center">About</h1>
 		</div>
-				  <div class="about-text"> 
-				I'm Mubarek Kebede, originally from Ethiopia,
-				and I graduated from Bahirdar University with a 
-				degree in Electrical and Computer Engineering.
-				I've been employed at Ethiopian Telecom for over
-				8 years as an IP and VSAT technician. My job
-				responsibilities include installing, configuring, and 
-				maintaining IP and VSAT networks to keep them 
-				operational and effective.
-			</p>
-			<p class="lead-para"> Moreover, I have a strong interest in programming,
-				thus I have worked on a machine learning project of 
-				my own called "Voice Command Control Wheelchair
-				Using Amharic and Qafaraf" dialect. An Android app 
-				for smartphones is also part of the project, enabling 
-				users to control the system.
-				Therefore, I am able to obtain experience with
-				the programming languages Java, Python,
-				TensorFlow, and Kotlin through my own project.
-			</p>
-		</div>
-		<div class="about-image">
-			<img src="./Image/mupic1.jpg" alt="About Image">
+		<div class="about-content">
+			<div class="about-text">
+				<p class="small-par">
+					I'm Mubarek Kebede, originally from Ethiopia,
+					and I graduated from Bahirdar University with a 
+					degree in Electrical and Computer Engineering.
+					I've been employed at Ethiopian Telecom for over
+					8 years as an IP and VSAT technician. My job
+					responsibilities include installing, configuring, and 
+					maintaining IP and VSAT networks to keep them 
+					operational and effective.
+				</p>
+				<p class="small-par">
+					Moreover, I have a strong interest in programming,
+					thus I have worked on a machine learning project of 
+					my own called "Voice Command Control Wheelchair
+					Using Amharic and Qafaraf" dialect. An Android app 
+					for smartphones is also part of the project, enabling 
+					users to control the system. Therefore, I am able to obtain experience with
+					the programming languages Java, Python, TensorFlow, and Kotlin through my own project.
+				</p>
+				<div class="about-image">
+					<img src="./Image/mupic1.jpg" alt="About Image">
+				</div>
+			</div>
 		</div>
 	</section>
 
 
 
+
 	<!-- Services Section -->
-	<section class="services" id="services"> 
+	<section class="services" id="services">
 		<div class="services-heading"> 
 			<h1 class="my-heading text-center">My Services</h1> 
 		</div> 
@@ -270,125 +256,10 @@
 							i.e. websites. 
 						</p> 
 					</div> 
-				</div> 
-				<div class="my-col"> 
-					<div class="my-card"> 
-						<div class="icon"> 
-							<i class="fa-solid fa-code"></i> 
-						</div> 
-						<h3 class="greet-heading blue-text"> 
-							Web Development 
-						</h3> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining 
-							of websites. It includes aspects such as 
-							web design, web publishing, 
-							web programming, and database management. 
-							It is the creation of an 
-							application that works over the internet 
-							i.e. websites. 
-						</p> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining 
-							of websites. It includes aspects such as 
-							web design, web publishing, 
-							web programming, and database management. 
-							It is the creation of an 
-							application that works over the internet 
-							i.e. websites. 
-						</p> 
-					</div> 
-				</div> 
-				<div class="my-col"> 
-					<div class="my-card"> 
-						<div class="icon"> 
-							<i class="fas fa-chart-line"></i> 
-						</div> 
-						<h3 class="greet-heading blue-text">SEO</h3> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining 
-							of websites. It includes aspects such as 
-							web design, web publishing, 
-							web programming, and database management. 
-							It is the creation of an 
-							application that works over the internet 
-							i.e. websites. 
-						</p> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining 
-							of websites. It includes aspects such as 
-							web design, web publishing, 
-							web programming, and database management. 
-							It is the creation of an 
-							application that works over the internet 
-							i.e. websites. 
-						</p> 
-					</div> 
-				</div> 
-			</div> 
-			
+				</div>
+			</div>
+
 			<div class="my-row"> 
-				<div class="my-col"> 
-					<div class="my-card"> 
-						<div class="icon"> 
-							<i class="fas fa-quote-left"></i> 
-						</div> 
-						<h3 class="greet-heading blue-text"> 
-							Content Writting 
-						</h3> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining of websites. 
-							It includes aspects such as web design, 
-							web publishing, web programming, and 
-							database management. It is the creation 
-							of an application that works over the 
-							internet i.e. websites. 
-						</p> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining of websites. 
-							It includes aspects such as web design, 
-							web publishing, web programming, and 
-							database management. It is the creation of an 
-							application that works over the internet i.e. 
-							websites. 
-						</p> 
-					</div> 
-				</div> 
-				<div class="my-col"> 
-					<div class="my-card"> 
-						<div class="icon"> 
-							<i class="fab fa-wordpress-simple"></i> 
-						</div> 
-						<h3 class="greet-heading blue-text"> 
-							WordPress Dev 
-						</h3> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining of websites. 
-							It includes aspects such as web design, 
-							web publishing, web programming, and 
-							database management. It is the creation 
-							of an application that works over the 
-							internet i.e. websites. 
-						</p> 
-						<p class="small-para"> 
-							Web development refers to the creating, 
-							building, and maintaining 
-							of websites. It includes aspects such as 
-							web design, web publishing, 
-							web programming, and database management. 
-							It is the creation of an 
-							application that works over the internet 
-							i.e. websites. 
-						</p> 
-					</div> 
-				</div> 
 				<div class="my-col"> 
 					<div class="my-card"> 
 						<div class="icon"> 
@@ -416,56 +287,57 @@
 							It is the creation of an 
 							application that works over the internet 
 							i.e. websites. 
-						</p> 
-					</div> 
-				</div> 
-			</div> 
-		</div> 
-	</section> 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Contact me section -->
-	<section class="contact" id="contact"> 
-		<div class="contact-heading"> 
-			<h1 class="my-heading text-center">Contact Me</h1> 
-		</div> 
-		<div class="contact-content"> 
-			<div class="contact-form-container"> 
-				<h1 class="greet-heading">Get In Touch</h1> 
-				<form class="contact-form"> 
-					<input class="form-controls" type="text"
-						placeholder="Your Name"> 
-					<input class="form-controls" type="text"
-						placeholder="Your Email"> 
-					<input class="form-controls" type="text"
-						placeholder="Your Phone"> 
-					<textarea class="form-controls"
-							placeholder="Write your message"
-							name="message" id="" cols="30"
-							rows="10"> 
-					</textarea> 
-					<input class="form-btn btn common-btn"
-						type="submit" value="Send Message"> 
-				</form> 
-			</div> 
-			<div class="contact-details"> 
-				<h1 class="greet-heading">My Contact Details</h1> 
-				<div class="details"> 
-					<h5 class="contact-heading">EMAIL</h5> 
-					<p class="contact-text">mubare.k1449@gmail.com</p> 
-				</div> 
-				<div class="details"> 
-					<h5 class="contact-heading">PHONE</h5> 
-					<p class="contact-text">+251 914070683</p> 
-				</div> 
-				 
-				<div class="details"> 
-					<h5 class="contact-heading">ADDRESS</h5> 
-					<p class="contact-text">Afar, Ethiopia</p> 
-					
-				</div> 
-			</div> 
-		</div> 
-	</section> 
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Me</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text" 
+                        placeholder="Your Name"> 
+                    <input class="form-controls" type="text" 
+                        placeholder="Your Email"> 
+                    <input class="form-controls" type="text" 
+                        placeholder="Your Phone"> 
+                    <textarea class="form-controls" 
+                            placeholder="Write your message" 
+                            name="message" id="" cols="30"
+                            rows="10"> 
+                    </textarea> 
+                    <input class="form-btn btn common-btn" 
+                        type="submit" value="Send Message"> 
+                </form>
+            </div>
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">mubare.k1449@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+251 914070683</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">Afar, Ethiopia</p>
+                    <p>Semera</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+
 
 	<!-- Footer section -->
 	<footer class="footer"> 
